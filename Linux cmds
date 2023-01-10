@@ -1,0 +1,173 @@
+  [root@localhost ~]#
+$whoami
+$pwd
+$ls
+$clear
+$cd /
+$cd (just and enter to go back to your pwd)
+$ cd /bin
+$ cd /sbin/
+$ cd /etc/
+$ cat /etc/hostname
+$ cd /tmp/
+$ cd /boot/
+$ cd grub	
+$ cd grub2/
+$ cd /proc/
+$ uptime
+$ cat /proc/uptime
+$ free -m
+
+
+COPY AND PASTE:
+$ cp devopsfile1.txt dev/
+$  cp /home/vagrant/devopsfile2.txt /home/vagrant/dev/
+$ cp -r dev bakupdir/
+$ mv devopsfile3.txt ops/
+$ mv testfile1.txt testfile22.txt
+$ mv *.txt textdir/
+$ rm devopsfile10.txt
+$ rm -r mobile
+$ mkdir testdir{1..5}
+$ rm -rf *
+
+
+VIM EDITOR:
+
+$ :se nu (set number)
+$ G (to go to the last line)
+$ gg (for the first line)
+$ yy (to copy line)
+$  p(to paste it below)
+$ P (upper case.....(to paste it in the below line))
+$ 4yy(to copy the 4 lines)
+$ dd (to delete a line)
+$ 4dd (to delete 4 lines)
+$ u (undo)
+$ dd is also used to cut and p to paste
+
+FILES:
+
+$ cd /home/ec2-user/docker/k8s/linux/jenkins
+$ ln -s /home/ec2-user/docker/k8s/linux/jenkins/doc.txt cmd
+$ ls -ltr
+
+
+FILTER:
+
+$ grep firewall anaconda-ks.cfg
+$ grep Firewall anaconda-ks.cfg
+$ grep -i Firewall anaconda-ks.cfg
+$ grep -i firewall < anaconda-ks.cfg
+$ grep -i firewall *
+$ grep -i firewall ls
+$ grep -iR firewall *
+$ less anaconda-ks.cfg
+$ more anaconda-ks.cfg
+$ clear
+$ head anaconda-ks.cfg
+$ head -20 anaconda-ks.cfg
+$ head -2 anaconda-ks.cfg
+$ clear
+$ tail anaconda-ks.cfg
+$ tail -2 anaconda-ks.cfg
+$ tail -f anaconda-ks.cfg
+$ clear
+$ tail -f /var/log/messages
+$ cut -d: -f1 /etc/passwd
+$ cut -d: -f3 /etc/passwd
+$ cut -d: -f4 /etc/passwd
+$ awk '{print $1}' /etc/passwd
+$ awk -F':' '{print $1}' /etc/passwd
+$ awk -F':' '{print $1}' /etc/passwd
+$ cat samplefile.txt
+$ vim samplefile.txt
+$ cat samplefile.txt
+$ sed 's/coronavirus/covid19/g' samplefile.txt
+$ cat samplefile.txt
+$ sed -i 's/coronavirus/covid19/g' samplefile.txt
+$ cat samplefile.txt
+$ sed -i 's/covid19/nothing/g' samplefile.txt
+$ cat samplefile.txt
+  
+  
+ I/0 Direction:
+
+  uptime
+  cat /etc/passwd
+  clear
+  uptime > /tmp/sysinfo.txt
+  cat /tmp/sysinfo.txt
+  ls
+  ls > /tmp/sysinfo.txt
+  cat /tmp/sysinfo.txt
+  uptime >> /tmp/sysinfo.txt
+  cat /tmp/sysinfo.txt
+  clear
+  uptime
+  free -m
+  df -h
+  echo "Good Morning"
+  echo "########################################" > /tmp/sysinfo.txt
+  date > /tmp/sysinfo.txt
+  echo "########################################" >> /tmp/sysinfo.txt
+  uptime >> /tmp/sysinfo.txt
+  echo "########################################" >> /tmp/sysinfo.txt
+  free -m >> /tmp/sysinfo.txt
+  echo "########################################" >> /tmp/sysinfo.txt
+  df -h >> /tmp/sysinfo.txt
+  echo "########################################" >> /tmp/sysinfo.txt
+  cat /tmp/sysinfo.txt
+  clear
+  yum install vim -y > /dev/null
+  cat /dev/null
+  cat /tmp/sysinfo.txt
+  cat /dev/null > /tmp/sysinfo.txt
+  cat /tmp/sysinfo.txt
+  clear
+  free -m > /dev/null
+  freeeee -m > /dev/null
+  freeeee -m 2>> /tmp//error.log
+  cat /tmp/error.log
+  free -m 1>> /tmp//error.log
+  cat /tmp/error.log
+  free -m &>> /tmp//error.log
+  freesdsd -m &>> /tmp//error.log
+  cat /tmp/error.log
+  cd /var/log/
+  ls
+  cd
+  clear
+  wc -l /etc/passwd
+  wc -l < /etc/passwd
+  clear
+  cd /etc/
+  ls
+  clear
+  ls | wc -l
+  ls | grep host*
+  * ls | grep host*
+  clear
+  ls | wc -l
+  ls | grep host*
+  ls | grep host
+  tail /var/log/messages | grep -i vagrant
+  tail -20 /var/log/messages | grep -i vagrant
+  free -m
+  free -m | grep Mem
+  ls -l | tail
+  ls -l | head
+  clear
+  cd
+  find /etc -name host*
+  find / -name host*
+  clear
+  locate
+  yum install mlocate -y
+  clear
+  updatedb
+  locate host
+  clear
+
+  
+  
